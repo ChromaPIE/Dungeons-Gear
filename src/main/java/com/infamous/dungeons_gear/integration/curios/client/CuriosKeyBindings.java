@@ -18,7 +18,7 @@ import org.lwjgl.glfw.GLFW;
 
 import static com.infamous.dungeons_gear.DungeonsGear.MODID;
 
-@Mod.EventBusSubscriber(modid = MODID)
+@Mod.EventBusSubscriber(value = Dist.CLIENT, modid = MODID)
 public class CuriosKeyBindings {
 
     public static final KeyBinding activateArtifact1 = new KeyBinding("key.dungeons_gear.curiosintegration.description_slot1", GLFW.GLFW_KEY_V, "key.dungeons_gear.curiosintegration.category");
